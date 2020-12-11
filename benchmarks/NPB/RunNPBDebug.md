@@ -1,7 +1,12 @@
 # How to run NPB-debug Programs
 ## Make the target 
 
-Clean `/bin`, `/CG` and `SP` first.
+Clean `/bin`, `/CG` and `/SP` first.
+Then do 
+```
+make clean
+```
+Note: not doing `make clean` will cause compilation error.
 
 To make target, take CG.B for example:
 ```
@@ -10,7 +15,6 @@ make cg CLASS=B
 ./bin/cg.B.x
 ```
 
-Note: encounter compilation error building SP.A and SP.B.
 
 ## Run pLiner
 For CG.B, change dir to `/CG`, and do 
